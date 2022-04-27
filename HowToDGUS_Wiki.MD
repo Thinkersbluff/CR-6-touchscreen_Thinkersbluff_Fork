@@ -20,7 +20,7 @@ NOTE: You may have a different preferred way of organizing and executing your wo
  - When you save modified files to the local repository, switch to the GitHub Desktop app and process a PR to upload those edits to the online copy of your forked repoository
 
 
-### Install the required DGUS Tool
+### How to install the required DGUS Tool
 
 STEP 1: Download the [DGUS v8.2.1.4 software](https://github.com/CR6Community/CR-6-touchscreen/releases/download/v2.0.8.1-cr6-community-release-6.1/DGUS_Tool_V8.2.1.14.7z).
 
@@ -53,7 +53,7 @@ Where Q: is the path of your flash drive with the SD card.
 
 You need to have Powershell Core installed (pwsh).
 
-### Images / screen images sources
+### Where to find the various Images used by the DGUS Tool to Generate the TFT files
 
 You can find the source files where the screen bitmaps are generated from in the [`src\images_src`](src\images_src) folder.
 
