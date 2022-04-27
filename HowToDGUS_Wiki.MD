@@ -8,9 +8,25 @@ This is an attempt to capture, clarify and maintain a set of instructions suffic
 We are open for contributions to this file. 
 Please feel free to start a discussion in the #lcd-discussion channel on the CR6Community Discord.
 
-## Working with the DGUS Tools and DWIN documents
+## Recommended: Create a controlled development environment for working with this firmware
 
-1. Download and unzip the [DGUS v8.2.1.4 software](https://github.com/CR6Community/CR-6-touchscreen/releases/download/v2.0.8.1-cr6-community-release-6.1/DGUS_Tool_V8.2.1.14.7z).
+NOTE: You may have a different preferred way of organizing and executing your work, so this particular organization is just one suggested approach that works well for the author:
+
+ - Use GitHub to maintain configuration control of your files (you will need your own GitHub account to do this, so if you don't already have one, we recommend that you open one.)
+ - Clone the CR6-Touchscreen repository, to host your personally tailored files and to prepare Pull Requests, when you wish to propose one of your edits to the upstream team
+ - Use the GitHub Desktop application to Clone your forked repository and keep a local copy on your computer
+ - Point the DGUS tool at the GitHub Clone version of your repository (By using the tool to open the DWprj.hmi file in the local repository clone)
+ - Edit the project files in the DGUS tool.
+ - When you save modified files to the local repository, switch to the GitHub Desktop app and process a PR to upload those edits to the online copy of your forked repoository
+
+
+### Install the required DGUS Tool
+
+STEP 1: Download the [DGUS v8.2.1.4 software](https://github.com/CR6Community/CR-6-touchscreen/releases/download/v2.0.8.1-cr6-community-release-6.1/DGUS_Tool_V8.2.1.14.7z).
+
+STEP 2: Unzip the DGUS tool file into a dedicated directory on your computer.   
+
+To run the tool, find and launch the executable DGUS_Tool_V8.2.1.14.exe
 
 ### How to open a DWIN project in the DGUS Tool
 
