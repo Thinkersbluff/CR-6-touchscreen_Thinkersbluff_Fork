@@ -1,45 +1,29 @@
-# CR-6 Touchscreen software
-Attempt to extend the CR-6 touch screen software. This repository belongs to the [forked Marlin firmware repository](https://github.com/CR6Community/Marlin/).
+# How to Develop and Maintain the CR6-touchscreen-firmware using the DWIN DGUS Tools and Documents
 
-## Downloads
+## Background
+This is an attempt to capture, clarify and maintain a set of instructions sufficient to lower the technological barrier for interested users of the CR6Community firmware - who may not be familiar with the DWIN DGUS Tools and Worflows - to maintain and tailor the touchscreen UI as they wish.
 
-Please find official releases in the [Releases section](https://github.com/CR6Community/CR-6-touchscreen/releases). Take the release which belongs to the particular firmware you are going to flash.
+## Contributing to this file
 
-Ensure you take the right assets: the `CR-6-touchscreen-[date].zip`. You should not download the `Source code` archive if you are downloading with the purpose of flashing your LCD.
+We are open for contributions to this file. 
+Please feel free to start a discussion in the #lcd-discussion channel on the CR6Community Discord.
 
-*If you have [a BTT SKR board with the BTT TFT](https://damsteen.nl/blog/2020/11/25/how-to-btt-skr-cr6-installation) you do not need this firmware. This firmware is only for when you use the stock Creality LCD with the stock or BTT motherboard.*
+## Working with the DGUS Tools and DWIN documents
 
-## Contributing
+1. Download and unzip the [DGUS v8.2.1.4 software](https://github.com/CR6Community/CR-6-touchscreen/releases/download/v2.0.8.1-cr6-community-release-6.1/DGUS_Tool_V8.2.1.14.7z).
 
-We are open for contributions. **Please open an issue in the issue tracker first before you start work on a pull request.**
+### How to open a DWIN project in the DGUS Tool
 
-The reason for this is that the DWIN project is not friendly for source control and any files cannot be merged (all binary). So, using our Discord server, we synchronize who is working on the files to prevent conflicts.
+1. Download and unzip the project Source.zip file into a blank directory on your computer.
 
-### Translations / localization
 
-Internationalization support in DGUS DWIN is very cumbersome. The background images of each page has the text hardcoded. To translate and have it first-class, you would need to duplicate all the bmps, give it a separate ID, and maintain that mapping in firmware as well or make every label an icon, which is a lot of work. The development team has no capacity to maintain localizations.
+3. Launch the DGUS tool and click the "Open Project" icon.
+4. Browse to the src\DWIN folder where you unzipped the Source file and click on the file "DWPrj.hmi" to open the project.
 
-If you like to translate the user interface to your own language, you must fork this repository and maintain your own version of the touch screen firmware.
+![image](https://user-images.githubusercontent.com/36551518/165621529-396f96f3-7194-4192-98b9-61d3b918f172.png)
 
-The complete workflow would look like this:
 
-1. Fork this repository.
-2. Work on the extui branch (this is the branch for all work going forward)
-3. In your fork, follow [the steps in the images section of this file](#images--screen-images-sources) to change the current bitmaps and translate them. There are XCF files available as the source of these bitmaps, usable in Gimp, to make life easier but you can do what you want.
-4. When we change something, it is up to you to replicate those screen changes. Therefore I recommend only to update the screen backgrounds and don't use the DWIN editor for anything other than for the purpose of generating the ICL file.
-5. Translated touch screen builds are up to you to provide which would then need to be made from the same moment as we are releasing builds.
-
-Good luck, and if you maintain your own translated firmware, please let us know!
-
-## Documentation for development
-
-You need the [DGUS v8.0.x software](http://dwin.com.cn/home/Index/download_file?download_id=4796) for editing the touch screen.
-
-You can open the .dgus project file in the [`src\DWIN`](src\DWIN) folder:
-
-![DGUS II interface](https://github.com/CR6Community/CR-6-touchscreen/blob/2fe14972eb589015c2dfe51d803f5abe99a1d592/doc/dgus2util.png)
-
-### Build firmware archive
+### How to Build a firmware archive
 
 To build a firmware archive for distribution, use the `build.cmd` script. It will do a sanity check and then zip the files to the `build` folder.
 
@@ -141,7 +125,25 @@ Font's are currently configured like below:
 In the same folder where you have the DWIN tool unpacked a `0_DWIN_ASC.HZK` file is placed. You need to copy that to the DWIN_SET folder, and can flash it directly.
 The kerning of the current font is not ideal (especially using numbers that are small, like "1"), so perhaps we should look for a replacement.
 
-### Other documentation
+## Customization Project Ideas
+
+### Translations / localization
+
+Internationalization support in DGUS DWIN is very cumbersome. The background images of each page has the text hardcoded. To translate and have it first-class, you would need to duplicate all the bmps, give it a separate ID, and maintain that mapping in firmware as well or make every label an icon, which is a lot of work. The development team has no capacity to maintain localizations.
+
+If you like to translate the user interface to your own language, you must fork this repository and maintain your own version of the touch screen firmware.
+
+The complete workflow would look like this:
+
+1. Fork this repository.
+2. Work on the extui branch (this is the branch for all work going forward)
+3. In your fork, follow [the steps in the images section of this file](#images--screen-images-sources) to change the current bitmaps and translate them. There are XCF files available as the source of these bitmaps, usable in Gimp, to make life easier but you can do what you want.
+4. When we change something, it is up to you to replicate those screen changes. Therefore I recommend only to update the screen backgrounds and don't use the DWIN editor for anything other than for the purpose of generating the ICL file.
+5. Translated touch screen builds are up to you to provide which would then need to be made from the same moment as we are releasing builds.
+
+Good luck, and if you maintain your own translated firmware, please let us know!
+
+## Other documentation
 
 Vendor documentation is mirrored to the [doc/vendor](doc/vendor) folder.
 
