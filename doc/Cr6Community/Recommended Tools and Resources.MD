@@ -5,7 +5,7 @@
 Here, we describe the tools and resources that the CR6Community development team has used to derive and maintain the current CR6Community-TouchScreen-Firmware.
 
 ## DWIN's Own Recommendations
-For reference, in [episode#1 of her YouTube Tutorial series](https://www.youtube.com/watch?v=_k3zu6JFv6I), DWIN Marketing Director Guo Maria recommends that you assemble the following tools and resources, to support project development and maintenance:
+For reference, in [episode#1 of her YouTube Tutorial series](https://www.youtube.com/watch?v=_k3zu6JFv6I), DWIN Sales Technician Guo Maria recommends that you assemble the following tools and resources, to support DWIN project development and maintenance:
 
 1. The DWIN Graphic User System (DGUS) Tool (v7.624 or higher)
    
@@ -38,7 +38,7 @@ For reference, in [episode#1 of her YouTube Tutorial series](https://www.youtube
 	The Product Data Sheet for the particular DWIN display being used to host the application.
 	
 
-## CR6Community Development Team Recommendations
+## CR6Community Development Team's Recommendations
 
 ### Which version of DGUS Tool to use?
 Download, install and use [DGUS Tool v8.2.1.14](https://github.com/CR6Community/CR-6-touchscreen/releases/download/v2.0.8.1-cr6-community-release-6.1/DGUS_Tool_V8.2.1.14.7z) or higher.
@@ -85,13 +85,17 @@ The CR6Community development team used [version 1.0 of the T5L_DGUSII Applicatio
 
 ?
 
+The Configuration File in the DWIN_SET folder from Creality is named: T5LCFG_272480.CFG
+
+	This suggests the display is a 272x480 pixel display.
+
 ## Other documentation
 
 Vendor documentation is mirrored to the [doc/vendor](doc/vendor) folder.
 
 The vendor's English-Language support site is here: https://www.dwin-global.com/
 
-The vendor's Marketing Director has posted numerous T5L/DGUS tutorials on YouTube at: https://www.youtube.com/playlist?list=PLRmlyfAByHzeay1LwW9FkcwaUOE20abk2
+One of the vendor's Sales Technicians has posted numerous T5L/DGUS tutorials on YouTube at: https://www.youtube.com/playlist?list=PLRmlyfAByHzeay1LwW9FkcwaUOE20abk2
 
 
 In addition, [this is a nice resource](https://github.com/rubienr/MarlinDgusResources/tree/creality-ender-5-plus/projects).
