@@ -1,4 +1,4 @@
-## FOR COMMUNITY FIRMWARE DEVELOPERS AND TESTERS ONLY: Instructions for Calibrating the DWIN Display Hardware
+## Instructions for Calibrating the DWIN Display Hardware
 
 **CAUTION - DWIN display calibration is definitely NOT NECESSARY TO INSTALL OR RUN THIS FIRMWARE and NOT for the faint-hearted. DWIN warn that you can brick your display, if you don't do this correctly.  These instructions are included FOR TESTERS ONLY**
 
