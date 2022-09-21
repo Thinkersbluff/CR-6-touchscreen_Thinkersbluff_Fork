@@ -1,3 +1,6 @@
+*NOTE: This repository documents the effort through which the final stable version of the refactored CF6.1 DWIN_SET was tested, debugged and stabilized.
+The final release on this repository has since been transferred back to the upstream CR6Community Display Firmware repository and is now avaiable for download from the list of CF6.1 assets on the CR6Community/Marlin repository.*
+
 # CR-6 Touchscreen firmware
 Attempt to extend the CR-6-touchscreen firmware to operate with DWIN display hardware flashed with and calibrated to run DGUS2 v4.5 or higher, such as those being sold with new CR6 machines as of approximately Dec 2021.
 
